@@ -20,7 +20,7 @@ One of the goals of the project is to crowdsource an archive out of these images
 - An item could start on one reel and finish on another (confirm?)
 
 In its initial state we just have the images and their microfilm metadata
- - (link to analysis of current data)
+ - https://drive.google.com/file/d/0B_WaJe4vl9vYQmZRYXpoN1QzTVU/view?pref=2&pli=1
 
 This is not an archive of distinct items; they do not yet make sense as: 
  - CHO to export to DPLA
