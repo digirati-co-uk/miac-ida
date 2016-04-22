@@ -1,53 +1,74 @@
-# Terms
+## Terms
 
-user: anyone
-contributor: anyone who is authed
-admin: someone with elevated privileges
-item: a logical archival unit comprising one or more images and one set of metadata. A photograph, a letter, a document. A record that might have its own page in some archival system.
-topic: a term in a controlled vocabulary. A place, a person, an organisation, an event, a concept.
+- user: anyone
+- contributor: anyone who is authed
+- admin: someone with elevated privileges
+- item: a logical archival unit comprising one or more images and one set of metadata. A photograph, a letter, a document. A record that might have its own page in some archival system.
+- topic: a term in a controlled vocabulary. A place, a person, an organisation, an event, a concept. A topic can have a page, but perhaps not all terms should have pages.
 
 
-# Features
+## Features
 
-Start with of 140,000 images
-initial organisation is 1000 images per microfilm reel
-Not an archival structure - a collection of images
-Each reel is not an item in the sense defined above
+- Start with of 140,000 images
+- initial organisation is 1000 images per microfilm reel
+- Not an archival structure - a collection of images
+- Each reel is not an item in the sense defined above
 
 One of the goals of the project is to crowdsource an archive out of these images.
-E.g., a reel might contain letters, photographs, documents.
-An item may span several images.
-An item could start on one reel and finish on another (confirm?)
+- E.g., a reel might contain letters, photographs, documents.
+- An item may span several images.
+- An item could start on one reel and finish on another (confirm?)
 
 In its initial state we just have the images and their microfilm metadata
- (link to analysis of current data)
+ - (link to analysis of current data)
 
 This is not an archive of distinct items; they do not yet make sense as: 
  - CHO to export to DPLA
  - IIIF manifest to drive viewer (the only organisational stucture at the start is per reel, it does not make sense to present the archive as 140 manifests each of 1000 images with no internal structure.
  - separate objects in Omeka
 
-Pages
- - items
- - topics 
- - editorial
- - geo overview? temporal overview?
+#### Pages
 
-What do users need to do?
+### items
 
-**Create**
+- Need to model an item. Mostly dcterms? Follow Omeka. Dates for people. Geo for places, events.
+- discussion thread per item?
+
+### topics
+
+- Page per topic. List of tag annos made for that term. Use #xywh to pull in images of tag targets.
+- dicsussion thread per topic?
+- timeline per topic? (dates reqd on item tagged)
+- geo (location reqd on item tagged - excl place)
+
+### editorial
+
+A few pages of supporting material
+
+### geo overview? temporal overview?
+
+Timelines for items and tags on items
+
+#### What do users need to do?
+
+##### Create
 
 - Annotation with tagging motivation
  - select tags from controlled vocabulary
- - create new terms for submission to vocab
+ - create new terms for submission to vocabulary
+ - As simple as possible UI
 - Annotation to select region for redaction request
 - Annotation with geo identification (?)
-- Range to identify a set of images as an item
-- Range to select images for redaction request
+- Range to identify a set of images as an item (mark beginning and end of document)
+- Range to identify a year or other date range (are the images and reels in date order?)
+- Range to select images for redaction request (a range with an anno?)
 - Comments on items and topics (thread per item? thread per topic? too granular?)
+- Public, private and group anno lists
+- Collections (IIIF Collection) of items for sharing
 
-**View**
+#### View
 
+- Generous interface to encourage exploration
 - Topic page per tag
  - Controlled vocabulary
  - People, Places, Concepts
@@ -56,13 +77,10 @@ What do users need to do?
  - consider geospatial and temporal presentation of tag instances by topic
 
 
-identification of range as distinct archival resource
-identification of range covering dates
-
-What do admins need to do?
+### What do admins need to do?
 
 management of controlled vocabulary
-SKOS OK? Owl? PoolParty? Protégé?
+- SKOS OK? Owl? PoolParty? Protégé?
  - synonyms
      - translations
  - refinement
@@ -70,4 +88,17 @@ SKOS OK? Owl? PoolParty? Protégé?
  - selection of terms that drive browse through facets (not all terms)
  
  140,000 images
+
+## Preservation concerns
+
+- Source images (D-space)
+- Generated Annotations
+- Other comment/forum posts
+- Other IIIF resources (manifests, ranges)
+
+Are there two distinct interfaces here?
+- The "raw" view that contributors can suggest start and end points of documents from
+- The "archival" view that presents identified items (page per item) as object suitable for export to DPLA, commentary, discussion
+
+Even if discussions are powered by an off-the-shelf engine like discourse we should make them available as annos JSON-LD for further processing and preservation, surface them through anno search API etc.
  
