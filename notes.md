@@ -40,6 +40,7 @@ This is not an archive of distinct items; they do not yet make sense as:
 - dicsussion thread per topic?
 - timeline per topic? (dates reqd on item tagged)
 - geo (location reqd on item tagged - excl place)
+- Assert relationships with other sources and pull data from some of them (e.g., Wikipedia)
 
 ### editorial
 
@@ -102,3 +103,14 @@ Are there two distinct interfaces here?
 
 Even if discussions are powered by an off-the-shelf engine like discourse we should make them available as annos JSON-LD for further processing and preservation, surface them through anno search API etc.
  
+## UX Challenges summary
+
+1. UI for crowdsourcing demarcation of archival records from a mass of images with minimal description
+2. UI for managing / approving demarcations
+3. UI for tagging items, images and regions of images with topic tags from controlled vocabulary; allowing contribution to vocab etc
+4. UI for managing controlled vocabulary - translations, synonyms, broader/narrower
+5. (The output of crowdsourcing + curation) UI for exploring the tagged and demarcated archive. Generous interface. Works from early on with sparse data, gets better as data gets richer, encourages users to make the data better. Topic pages encourage exploration. 
+
+## Systems challenges
+
+Archive is fluid, branching as richer data is supplied. This makes it hard to make statements about or present as an archive. Does it shift and change within Omeka, or do items get pushed to Omeka once approved?
