@@ -2,7 +2,11 @@ body { padding: 50px; font-family: Helvetica; font-size: 100%; }
 nav { border-bottom: 1px dotted grey; padding-bottom: 10px; }
 footer { color: grey; margin-top: 80px; font-size: 0.825rem; border-top: 1px dotted grey;}
 
-h1 { }
+small { color: grey;}
+li { line-height: 1.25em; }
+table { border: 0 }
+th { padding-bottom: 5px; text-align: left; }
+td { padding-bottom: 5px;}
 
 
 
