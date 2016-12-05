@@ -1,1 +1,8 @@
-body { font-family: Helvetica}
+body { padding: 50px; font-family: Helvetica; font-size: 100%; }
+nav { border-bottom: 1px dotted grey; padding-bottom: 10px; }
+footer { color: grey; margin-top: 80px; font-size: 0.825rem; border-top: 1px dotted grey;}
+
+h1 { }
+
+
+
