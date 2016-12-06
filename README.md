@@ -1,2 +1,1 @@
-# miac-ida
-Indigenous Digital Archive
+# miac-idaIndigenous Digital Archive

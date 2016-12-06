@@ -1,13 +1,16 @@
 nav { border-bottom: 1px dotted grey; padding-top: 10px; padding-bottom: 10px; }
 footer { color: grey; margin-top: 80px; margin-bottom: 40px; font-size: 0.825rem; border-top: 1px dotted grey;}
+footer p { margin-bottom: 0}
 
-p {margin-bottom: 0;line-height: 1.25em;}
+p { line-height: 1.25em; margin-bottom: 1rem;}
 small { color: grey;}
 li { line-height: 1.25em; }
+
 table { border: 0 }
 th { padding-bottom: 5px; text-align: left; }
 td { padding-bottom: 5px;}
 
+.site-label { margin-bottom: 0;}
 .description { font-size: 1.25rem;}
 .admin { padding: 10px; background-color: #ffc;}
 .space { padding-bottom: 30px;}
@@ -17,6 +20,3 @@ td { padding-bottom: 5px;}
 .large-image {width: 100%; height: 600px; background-color: #999;}
 .small-image {width: 100%; height: 180px; margin-bottom: 30px; background-color: #999;}
 .collection-block {width: 100%; height: 180px; margin-bottom: 20px; background-color: #999;}
-
-
-
