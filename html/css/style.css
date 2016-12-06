@@ -9,6 +9,7 @@ th { padding-bottom: 5px; text-align: left; }
 td { padding-bottom: 5px;}
 
 .description { font-size: 1.25rem;}
+.admin { padding: 10px; background-color: #ffc;}
 
 /* temporary */
 .spec {font-style: italic; padding: 20px; border: 1px dotted grey; margin-bottom: 10px;}
