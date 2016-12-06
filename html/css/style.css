@@ -1,7 +1,7 @@
-body { padding: 50px; font-family: Helvetica; font-size: 100%; }
-nav { border-bottom: 1px dotted grey; padding-bottom: 10px; }
-footer { color: grey; margin-top: 80px; font-size: 0.825rem; border-top: 1px dotted grey;}
+nav { border-bottom: 1px dotted grey; padding-top: 10px; padding-bottom: 10px; }
+footer { color: grey; margin-top: 80px; margin-bottom: 40px; font-size: 0.825rem; border-top: 1px dotted grey;}
 
+p {margin-bottom: 0}
 small { color: grey;}
 li { line-height: 1.25em; }
 table { border: 0 }
