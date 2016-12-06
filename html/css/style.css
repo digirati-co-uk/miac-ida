@@ -10,7 +10,8 @@ table { border: 0 }
 th { padding-bottom: 5px; text-align: left; }
 td { padding-bottom: 5px;}
 
-.site-label { margin-bottom: 0;}
+.site-label { margin-bottom: 0; vertical-align: center;}
+.site-label img { width: 30px; padding-right: 5px; }
 .description { font-size: 1.25rem;}
 .admin { padding: 10px; background-color: #ffc;}
 .space { padding-bottom: 30px;}
